@@ -34,8 +34,9 @@ var HeroDetailComponent = (function () {
     ], HeroDetailComponent.prototype, "hero", void 0);
     HeroDetailComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'my-hero-detail',
-            template: "\n\t\t\t\t<div *ngIf=\"hero\">\n\t  \t\t\t\t<h2>{{hero.name}} details!<h2>\n\t  \t\t\t\t<div><label>id: </label>{{hero.id}}</div>\n\t  \t\t\t\t<div>\n\t  \t\t\t\t\t<label>name: </label>\n\t  \t\t\t\t\t<input [(ngModel)]=\"hero.name\" placeholder=\"name\">\n\t\t\t\t\t</div>\n\t\t\t\t<button (click)=\"goBack()\">Back</button>\n      \t\t\t"
+            templateUrl: './hero-detail.component.html',
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService, router_1.ActivatedRoute, common_1.Location])
     ], HeroDetailComponent);
