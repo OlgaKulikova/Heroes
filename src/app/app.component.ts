@@ -68,6 +68,7 @@ import { OnInit } from '@angular/core';
     `],
     providers: [HeroService]
 })
+
 export class AppComponent implements OnInit { 
 	title = 'Tour of Heroes';
 	selectedHero: Hero;
@@ -80,7 +81,7 @@ export class AppComponent implements OnInit {
 	}
 
 	getHeroes(): void {
-    	this.heroes = this.heroService.getHeroes();
+    	this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   	}
 
   	ngOnInit(): void {
