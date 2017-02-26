@@ -33,10 +33,6 @@ var HeroDetailComponent = (function () {
         this.heroService.update(this.hero)
             .then(function () { return _this.goBack(); });
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], HeroDetailComponent.prototype, "hero", void 0);
     HeroDetailComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
